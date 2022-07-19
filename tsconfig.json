@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "importHelpers": true,
+        "noImplicitAny": true,
+        "noEmitHelpers":true,
+        "moduleResolution": "node",
+        "preserveConstEnums": true,
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "outDir": "./lib",
+        "declaration": true
+    },
+    "baseUrl": ".",
+    "types": [
+        "webpack-env"
+    ],
+    "paths": {
+        "@/*": [
+            "test/*"
+        ]
+    },
+    "lib": [
+        "esnext",
+        "dom",
+        "dom.iterable",
+        "scripthost"
+    ],
+    "include": [
+        "src/**/*.ts",
+        "test/**/*.ts",
+        "test/**/*.tsx",
+        "test/**/*.vue",
+        "test/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
